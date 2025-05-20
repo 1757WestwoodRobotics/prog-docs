@@ -22,6 +22,14 @@ jobs:
           mkdir mdbook
           curl -sSL $url | tar -xz --directory=./mdbook
           echo `pwd`/mdbook >> $GITHUB_PATH
+      - name: Install latest mdbook-repl
+        run: |
+          tag=$(curl 'https://api.github.com/repos/MR-Addict/mdbook-repl/releases/latest' | jq -r '.tag_name')
+          url="https://github.com/MR-Addict/mdbook-repl/releases/download/${tag}/mdbook-repl-${tag}-x86_64-unknown-linux-gnu.zip"
+          mkdir mdbook-repl
+          curl -sSL $url -o mdbook-repl.zip
+          unzip mdbook-repl.zip -d ./mdbook-repl
+          echo "$(pwd)/mdbook-repl/mdbook-repl-${tag}-x86_64-unknown-linux-gnu">> $GITHUB_PATH
       - name: Build Book
         run: |
           mdbook build
