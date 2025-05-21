@@ -2,7 +2,7 @@
 
 - Create a program that allows the user to enter a word/phrase, and outputs the first letter of that word/phrase
 ```py
-word = "Wolverines" # change this
+word = input()
 print(word[0])
 ```
 - Create a list with one string of your choice in it
@@ -12,7 +12,7 @@ print(word[0])
 
 ```py
 list = ["Cargo"]
-number = 10 # change this
+number = int(input()) # change this
 
 list.append(number)
 list.append(2 * number)
