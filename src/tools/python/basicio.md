@@ -7,3 +7,11 @@ print("Hello World!")
 1+1 # does not get printed
 print(1+1) # does print out 2
 ```
+
+If we want to take input from the user, we can use the `input` keyword
+
+```py
+print("What is your name?")
+name = input()
+print(f"Hello, {name}") # you will learn about every part of this later
+```

@@ -31,3 +31,4 @@ name = "Reiko"
 print(f"{name} is {len(name)} characters long.")  # => "Reiko is 5 characters long."
 ```
 
+After this, try out [Challenge 1!](../challenges/1.md)
