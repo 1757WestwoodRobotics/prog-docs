@@ -47,7 +47,7 @@ Lets break down each part of the `for` loop
 ```py
 a = range(6)
 print(a)      # => range(0,6)
-print(list(a) # => [0,1,2,3,4,5]
+print(list(a)) # => [0,1,2,3,4,5]
 ```
 
 
