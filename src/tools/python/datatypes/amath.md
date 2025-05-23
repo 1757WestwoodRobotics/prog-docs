@@ -14,3 +14,6 @@ print(2**3)  # => 8
 print(1 + 3 * 2)    # => 7
 print((1 + 3) * 2)  # => 8
 ```
+
+
+{{#authors lmaxwell24}}

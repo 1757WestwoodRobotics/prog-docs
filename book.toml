@@ -18,3 +18,5 @@ src = "https://whsrobotics.org/mdbook-repl/embed/"
 python.enable = true
 python.loading = "lazy"
 
+
+[preprocessor.github-authors]

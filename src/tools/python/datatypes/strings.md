@@ -32,3 +32,5 @@ print(f"{name} is {len(name)} characters long.")  # => "Reiko is 5 characters lo
 ```
 
 After this, try out [Challenge 1!](../challenges/1.md)
+
+{{#authors lmaxwell24}}

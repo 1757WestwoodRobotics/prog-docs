@@ -4,3 +4,5 @@ this set of documents is intended to be both a teaching platform as well as a re
 If you want to know "know do I run robot code" just start with [installation](./installation.md)
 
 More to come! 
+
+{{#authors lmaxwell24}}

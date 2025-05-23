@@ -18,3 +18,6 @@ print("Hello world!")
 The next few sections are tutorials if you need to learn python
 
 Absolutely every single section in this python area is editable, please feel free to mess with every example!!!
+
+
+{{#authors lmaxwell24}}
