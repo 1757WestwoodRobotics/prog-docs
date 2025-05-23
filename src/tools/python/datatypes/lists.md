@@ -171,7 +171,7 @@ We can use the `in` keyword to figure out if a given element is `in` a list
 a = [1,2,3,4]
 print(1 in a) # => True the value of `1` is in the list `a`
 print(5 in a) # => False
-print(0 in a) # => Falseb
+print(0 in a) # => False
 ```
 
 ### At this point, try out challenge 2!
