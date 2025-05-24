@@ -19,4 +19,4 @@ list.append(2 * number)
 print(list)
 ```
 
-{{#authors lmaxwell24}}
+{{#authors lmaxwell24,Slendrum465}}

@@ -47,4 +47,4 @@ print(f"The total number of vowels is {vowelCount(user_word)}")
 ```
 
 
-{{#authors lmaxwell24}}
+{{#authors lmaxwell24,Slendrum465}}

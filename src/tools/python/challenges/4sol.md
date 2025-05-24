@@ -74,4 +74,4 @@ for character in word:
 print(f"Total vowel count: {vowel_count}")
 ```
 
-{{#authors lmaxwell24}}
+{{#authors lmaxwell24,Slendrum465}}
