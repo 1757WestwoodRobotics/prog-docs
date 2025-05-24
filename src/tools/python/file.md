@@ -2,7 +2,7 @@
 
 *Since we're running in a browser python environment, the following tutorial will not have anything that's runnable, if you want to try any of these examples for yourself, you can with your own computer environment*
 
-```py.norepl
+```py,norepl
 # Instead of try/finally to cleanup resources you can use a with statement
 with open("myfile.txt") as f: # opens a new file to read
     for line in f: # f is an iterable
