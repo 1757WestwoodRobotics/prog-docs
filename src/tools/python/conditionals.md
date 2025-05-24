@@ -145,7 +145,7 @@ else:
 	print("I will always print")
 ```
 
-## At this point try out challenge 3!
+## At this point try out [challenge 3](./challenges/3.md)!
 
 
 {{#authors lmaxwell24}}

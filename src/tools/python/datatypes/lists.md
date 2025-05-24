@@ -174,8 +174,6 @@ print(5 in a) # => False
 print(0 in a) # => False
 ```
 
-### At this point, try out challenge 2!
-
-
+### At this point, try out [challenge 2](../challenges/2.md)!
 
 {{#authors lmaxwell24}}

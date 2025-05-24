@@ -27,7 +27,7 @@ a          =                    1
 a=                       1
 ```
 
-Unlike other languages, python will dynamically infer the type for a given variable. Ever since python 3.6 you can also explicitly mark the type, but at runtime it won't listen, but for programming best practices it is reccomended that you when possible assign types
+Unlike other languages, python will dynamically infer the type for a given variable. Ever since python 3.6 you can also explicitly mark the type, but at runtime it won't listen, but for programming best practices it is recommended that you when possible assign types
 
 ```py,norepl
 a: int = 1
