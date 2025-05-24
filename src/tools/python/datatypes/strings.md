@@ -31,6 +31,24 @@ name = "Reiko"
 print(f"{name} is {len(name)} characters long.")  # => "Reiko is 5 characters long."
 ```
 
+if we want to include the literal character `"` in a string, we can use the escape character `\` like the following
+```py
+print("these are \"quotes\" and are cool!")
+```
+
+here is a list of different characters that would need to be escaped, try them out
+
+- `\'` single quote, if you are using `'` to quote
+- `\\` the backslash character
+- `\n` new line
+- `\r` carriage return
+- `\t` tab
+- `\b` backspace
+- `\f` form feed
+
+```py
+print("edit me and try some of the escape characters!")
+```
 After this, try out [Challenge 1!](../challenges/1.md)
 
 {{#authors lmaxwell24}}

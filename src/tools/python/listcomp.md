@@ -13,4 +13,11 @@ print({x for x in "abcddeef" if x not in "abc"})  # => {'d', 'e', 'f'}
 print({x: x**2 for x in range(5)})                # => {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
 ```
 
+we can use the `reversed` function to take a given `iterable` and reverse it
+
+```py
+print(list(range(5)))           # => [4,3,2,1,0]
+print(list(reversed(range(5)))) # => [4,3,2,1,0]
+```
+
 {{#authors lmaxwell24}}
