@@ -151,4 +151,6 @@ for i in range(20):
 	print("I'm an odd number!")
 ```
 
+## After this, try out [Challenge 4](./challenges/4.md)
+
 {{#authors lmaxwell24}}

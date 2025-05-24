@@ -57,4 +57,6 @@ x, y = swap(x, y)     # => x = 2, y = 1
 print(x,y)
 ```
 
+## After this,  try out [Challenge 5](./challenges/5.md)
+
 {{#authors lmaxwell24}}
