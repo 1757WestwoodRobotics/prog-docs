@@ -145,6 +145,7 @@ else:
 	print("I will always print")
 ```
 
+## At this point try out challenge 3!
 
 
 {{#authors lmaxwell24}}
