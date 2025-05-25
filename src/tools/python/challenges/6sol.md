@@ -12,12 +12,12 @@ controlScheme1 = [
 ]
 controlScheme2 = [
  {"id": 0, "button": 1, "description": "up"},
- {"id": 0, "button": 2, "description": "left"}
- {"id": 0, "button": 3, "description": "down"}
- {"id": 0, "button": 4, "description": "right"}
+ {"id": 0, "button": 2, "description": "left"},
+ {"id": 0, "button": 3, "description": "down"},
+ {"id": 0, "button": 4, "description": "right"},
  {"id": 1, "button": 1, "description": "jump"},
- {"id": 1, "button": 2, "description": "shoot"}
- {"id": 1, "button": 3, "description": "duck"}
+ {"id": 1, "button": 2, "description": "shoot"},
+ {"id": 1, "button": 3, "description": "duck"},
  {"id": 1, "button": 4, "description": "run"}
 ]
 
@@ -32,7 +32,7 @@ print(getDesc(controlScheme2))
 Like above, except expand on to return a `set` of `id`s. Note that a set enforces that there are no duplicates to the `id`. Also write a function that returns a sorted list of all the buttons. If there are duplicate buttons, keep them.
 
 ```py
-controlScheme = [
+controlScheme1 = [
  {"id": 2, "button": 1, "description": "fire"}, 
  {"id": 2, "button": 2, "description": "intake"},
  {"id": 1, "button": 4, "description": "climb"},
@@ -41,12 +41,12 @@ controlScheme = [
 ]
 controlScheme2 = [
  {"id": 0, "button": 1, "description": "up"},
- {"id": 0, "button": 2, "description": "left"}
- {"id": 0, "button": 3, "description": "down"}
- {"id": 0, "button": 4, "description": "right"}
+ {"id": 0, "button": 2, "description": "left"},
+ {"id": 0, "button": 3, "description": "down"},
+ {"id": 0, "button": 4, "description": "right"},
  {"id": 1, "button": 1, "description": "jump"},
- {"id": 1, "button": 2, "description": "shoot"}
- {"id": 1, "button": 3, "description": "duck"}
+ {"id": 1, "button": 2, "description": "shoot"},
+ {"id": 1, "button": 3, "description": "duck"},
  {"id": 1, "button": 4, "description": "run"}
 ]
 
