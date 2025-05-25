@@ -102,13 +102,13 @@ Methods of lists
 We can call a couple of things on `list` objects
 
 ```py
-# li.index(n) is the same as li[n]
+# li.index(n) returns the index of the first found element in a list
 li = [0,2,4,6,8]
 print(li.index(0)) # => 0
 print(li[0])       # => 0
 
-print(li.index[2]) # => 4
-print(li[2])       # => 4
+print(li.index[2]) # => 1
+print(li[1])       # => 2
 ```
 
 We can also add things onto a list with the `append` keyword
@@ -122,15 +122,20 @@ print(li)       # => [0,2,4,6,8,10]
 
 If we want to put elements in a specific location, we can use the `insert` keyword, its usage is `li.insert(index, value)`
 
-We can also remove elements at a given index with the `remove` method, usage of `li.remove(index)`
+we can remove elements with the `del` keyword
+
+We can also remove the first instance of an element with  the `remove` method, usage of `li.remove(index)`
 ```py
 li = [1,3,4]
 print(li)      # => [1,3,4]
 li.insert(1,2) # inserts that element
 print(li)      # => [1,2,3,4]
 
-li.remove(3)
+del li[3]
 print(li)      # => [1,2,3]
+
+li.remove(2)
+print(li)      # => [1,3]
 ```
 
 we can add lists onto other lists
