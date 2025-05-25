@@ -3,7 +3,7 @@
 
 ## For loop
 
-There are instances in which we do not want to have long messy unreadable code. 
+There are instances in which we do not want to have long messy unreadable code that can result from wanting to repeat an action. 
 ```py
 # this is bad!
 print("hi")
@@ -14,7 +14,7 @@ print("hi")
 print("hi")
 ```
 
-so instead, we have ways of repeating code over and over again
+so instead, we have ways of repeating code over and over again, we can use a loop.
 
 ```py
 for i in range(6):
@@ -41,7 +41,7 @@ Lets break down each part of the `for` loop
 - `for` the keyword telling python we want to create a loop that iterates a fixed number of times
 - `i` we are defining a variable with name `i` to run through this loop
 - `in` just another part of the syntax in a `for` loop
-- `range(6)` creates an iterator that goes from 0 through 5. We will talk about the difference between an iterator and a list in a future chapter. 
+- `range(6)` creates an iterator that goes from 0 through 5 (6 is exclusive). We will talk about the difference between an iterator and a list in a future chapter. 
 	- For the purposes of a loop, all lists are iterables, but not all iterables are lists. You can't call `range(6)[0]` like you can `[1,2,3,4][0]` If you wish to treat any iterable as a list, just wrap it in a `list` function like so:
 
 ```py
@@ -66,6 +66,16 @@ for cool_var in range(7):
 	print(f"This works! {cool_var}")
 ```
 
+sometimes, we may need to keep track of the index of some iterable. We can take advantage of `len()` from before to help us solve these problems:
+
+```py
+a = ["sheep", "dog", "cat", "mouse"]
+# what if we wanted only the even indices?
+for i in range(len(a)):
+	if i % 2 == 0:
+		print(a[i])
+```
+
 While Loops
 ---
 
@@ -85,6 +95,7 @@ while user != "q":
 	print("I will keep printing until you enter 'q'")
 	user = input()
 ```
+When possible, you should use `for` loops as opposed to `while` loops as Python is more optimized for the former. In cases however in which you need to check a certain condition (above) or are modifying the list/string/iterable that you are attempting to iterate through, you must use a while loop.
 
 ## Breaking loops
 
