@@ -72,8 +72,8 @@ sometimes, we may need to keep track of the index of some iterable. We can take 
 a = ["sheep", "dog", "cat", "mouse"]
 # what if we wanted only the even indices?
 for i in range(len(a)):
-	if i % 2 == 0:
-		print(a[i])
+    if i % 2 == 0:
+        print(a[i])
 ```
 
 While Loops
