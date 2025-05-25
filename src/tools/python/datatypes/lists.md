@@ -187,7 +187,7 @@ print(0 in a) # => False
 List `=`
 ---
 
-So far we've seen that the assignment statement `=` copies the contents of one variable into the other. This is true for immutable types, whose internal attributes we cannot modify like we can with lists (i.e. we can't do `x[0]` for an int). 
+So far we've seen that the assignment statement `=` copies the contents of one variable into the other. This is true for ints, strings, bools, and floats.
 
 However, variables for lists store a pointer to where we can find the actual list in memory, and the `=` statement changes the pointer as opposed to copying the list's contents. The following example illustrates this:
 
