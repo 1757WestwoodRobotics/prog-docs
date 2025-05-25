@@ -164,4 +164,4 @@ for i in range(20):
 
 ## After this, try out [Challenge 4](./challenges/4.md)
 
-{{#authors lmaxwell24}}
+{{#authors lmaxwell24, stao5}}
