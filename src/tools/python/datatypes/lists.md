@@ -191,6 +191,8 @@ So far we've seen that the assignment statement `=` copies the contents of one v
 
 However, variables for lists store an address of where we can find the actual list in computer memory. We say the variable "points" to the list as opposed to "storing" the list. The `=` statement copies the address as opposed to copying the list's contents. See the following diagram:
 
+![list-diagram](list-diagram.jpg)
+
 The following example illustrates the consequences of this, being that modifying a variable that points to a list means we see the modification from any variable that points to it.
 
 ```py
