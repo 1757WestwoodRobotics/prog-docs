@@ -48,6 +48,8 @@
 			- [Solution](tools/python/challenges/4sol.md)
 		- [Challenge 5](tools/python/challenges/5.md)
 			- [Solution](tools/python/challenges/5sol.md)
+		- [Challenge 6](tools/python/challenges/6.md)
+			- [Solution](tools/python/challenges/6sol.md)
 - [RobotPY](tools/robotpy/README.md)
 	- [Robot file structure](tools/robotpy/file.md)
 	- [Constants.py](tools/robotpy/constants.md)

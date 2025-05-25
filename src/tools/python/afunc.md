@@ -145,4 +145,6 @@ res = list(filter(lambda x: x > 5, [3, 4, 5, 6, 7]))  # => [6, 7]
 print(res)                                            # 3,4 and 5 are not > 5
 ```
 
+## After this, try out [Challenge 6](./challenges/6.md)
+
 {{#authors lmaxwell24}}
