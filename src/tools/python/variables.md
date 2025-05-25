@@ -12,7 +12,7 @@ a = 1
 lets break it down character by charater:
 - `a`: the variable name
 - `=`: this keyword is how we assign to variables. Most notably, is that it is explicitly assignment. You will learn about `==` in the next section, conditionals, but it always **sets** the left side **equal to** the right side, never the other way
-- `1` the value of which we are assigning the variable `a` to. For now, we will assgin a to be an integer, or type `int` (a nonegative, nonfractional number). We will go over the different datatypes that can be taken on in the next section.
+- `1` the value of which we are assigning the variable `a` to. For now, we will assgin a to be an integer, or type `int` (a nonfractional number). We will go over the different datatypes that can be taken on in the next section.
 
 note that python doesn't care about the spacing for assignment statements,  so all examples below yield equivelent results
 ```py
