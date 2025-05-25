@@ -221,4 +221,4 @@ If we wanted to copy values, but maintain the independance of the lists so that 
 
 ### At this point, try out [challenge 2](../challenges/2.md)!
 
-{{#authors lmaxwell24}}
+{{#authors lmaxwell24, stao5}}
