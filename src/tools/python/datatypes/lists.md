@@ -1,6 +1,6 @@
 # Lists
 
-Lists are just collections of other datatypes. They most literally list things out
+Lists are just collections of other datatypes. They most literally list things out. 
 
 ```py
 a = [1,2,3,4]  # creating a list of 4 elements
@@ -183,6 +183,41 @@ print(1 in a) # => True the value of `1` is in the list `a`
 print(5 in a) # => False
 print(0 in a) # => False
 ```
+
+List `=`
+---
+
+So far we've seen that the assignment statement `=` copies the contents of one variable into the other. This is true for immutable types, whose internal attributes we cannot modify like we can with lists (i.e. we can't do `x[0]` for an int). 
+
+However, variables for lists store a pointer to where we can find the actual list in memory, and the `=` statement changes the pointer as opposed to copying the list's contents. The following example illustrates this:
+
+```py
+a = [1,2,3,4] # a POINTS to this list, which is stored in memory
+b = [5,6,7,8] # b POINTS to this list, which is stored in memory
+print(a) # => [1,2,3,4]
+print(b) # => [5,6,7,8]
+
+a = b # a now POINTS to what b POINTS to
+
+print(a) # => [5,6,7,8]
+print(b) # => [5,6,7,8]
+
+b.append(9) # modifying b 
+
+print(a) # => [5,6,7,8,9]
+print(b) # => [5,6,7,8,9]
+
+b.append(10) # modifying a again 
+
+print(a) # => [5,6,7,8,9,10]
+print(b) # => [5,6,7,8,9,10]
+
+# As both variables point to the same list in memory, 
+# modifying one modifies both
+```
+
+If we wanted to copy values, but maintain the independance of the lists so that modifying one does not modify the other, we would need to manually iterate through each list. This can be done cleanly with loops, which we will discuss in the `loops` section. 
+
 
 ### At this point, try out [challenge 2](../challenges/2.md)!
 
