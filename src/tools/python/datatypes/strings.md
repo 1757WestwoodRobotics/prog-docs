@@ -73,13 +73,15 @@ print(str[2])       # => b
 # (i.e. is a number of letter) and there is at least one character.
 str1 = 'robor123'
 str2 = '""'
+str3 = '' # strings can have no characters! (this is an empty string)
 
 print(str1.isalnum()) # => True
 print(str2.isalnum()) # => False
+print(str3.isalnum()) # => False
 ```
 
 ```py
-# str.upper() returns returns a _copy_ of the string with all the cased characters converted to uppercase.
+# str.upper() returns returns a copy of the string with all the cased characters converted to uppercase.
 str1 = 'ww1757'
 print(str1.upper())) # => 'WW1757'
 print(str1) # => 'ww1757'
