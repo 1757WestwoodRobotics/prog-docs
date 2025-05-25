@@ -171,7 +171,7 @@ a = ["tomato", "potato", "o"]
 print(len(a)) # => 3
 ```
 
-To find an exhaustive list of python `list` methods, check out this [link]([url](https://docs.python.org/3/tutorial/datastructures.html)).
+Python has powerful list manipulation methods that are built into the language. To find an exhaustive list of python `list` methods, check out the [official Python Docs](https://docs.python.org/3/tutorial/datastructures.html).
 
 Element checking
 ---
