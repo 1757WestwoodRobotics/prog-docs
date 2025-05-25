@@ -189,7 +189,9 @@ List `=`
 
 So far we've seen that the assignment statement `=` copies the contents of one variable into the other. This is true for ints, strings, bools, and floats.
 
-However, variables for lists store a pointer to where we can find the actual list in memory, and the `=` statement changes the pointer as opposed to copying the list's contents. The following example illustrates this:
+However, variables for lists store an address of where we can find the actual list in computer memory. We say the variable "points" to the list as opposed to "storing" the list. The `=` statement copies the address as opposed to copying the list's contents. See the following diagram:
+
+The following example illustrates the consequences of this, being that modifying a variable that points to a list means we see the modification from any variable that points to it.
 
 ```py
 a = [1,2,3,4] # a POINTS to this list, which is stored in memory
@@ -216,9 +218,9 @@ print(b) # => [5,6,7,8,9,10]
 # modifying one modifies both
 ```
 
-If we wanted to copy values, but maintain the independance of the lists so that modifying one does not modify the other, we would need to manually iterate through each list. This can be done cleanly with loops, which we will discuss in the `loops` section. 
+If we wanted to copy values, but maintain the independance of the lists so that modifying one does not modify the other, we would need to manually iterate through each list. This can be done cleanly with loops, which we will discuss in the loops section. Note that `==` checks if two lists have the same values and length, whereas a new keyword `is` checks if two variables point to the same list. This is dicsussed more in conditionals below.
 
 
 ### At this point, try out [challenge 2](../challenges/2.md)!
 
-{{#authors lmaxwell24, stao5}}
+{{#authors lmaxwell24,stao5}}

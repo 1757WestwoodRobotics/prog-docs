@@ -20,4 +20,4 @@ print(type(y)) # => <class 'float'>
 print(type(z)) # => <class 'list'>
 
 ```
-{{#authors lmaxwell24, stao5}}
+{{#authors lmaxwell24,stao5}}

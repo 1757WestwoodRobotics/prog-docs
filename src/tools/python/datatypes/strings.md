@@ -101,4 +101,4 @@ Python has powerful string manipulation methods already built into the language.
 
 After this, try out [Challenge 1!](../challenges/1.md)
 
-{{#authors lmaxwell24, stao5}}
+{{#authors lmaxwell24,stao5}}

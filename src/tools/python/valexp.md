@@ -14,7 +14,7 @@ In Python, we represent data using *values*. These are encodings that Python rec
 
 We can chain values together with *operators* (functions that can be performed on values) to create *expressions*. Here are a few examples:
 
-```py
+```py,norepl
 1 + 1 # evaluates to 2
 
 2 - 3 + 7 + (8 // 2) # evaluates to 10
@@ -34,7 +34,7 @@ not True # evaluates to False
 
 When given an expression, Python will evaluate it (i.e. perform operatorations according to their order/precdence) into a value. An expression that evaluates to itself is what is known as a *literal*. 
 
-```py
+```py,norepl
 5 # evaluates to 5. This expression *literally* means exactly what is written: 5
 
 'robot' # evaluates to 'robot'. Again, this expression is literally what it means

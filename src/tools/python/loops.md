@@ -72,7 +72,7 @@ sometimes, we may need to keep track of the index of some iterable. We can take 
 a = ["sheep", "dog", "cat", "mouse"]
 # what if we wanted only the even indices?
 for i in range(len(a)):
-    if i % 2 == 0:
+    if i % 2 == 0: # check if even
         print(a[i])
 ```
 
@@ -164,4 +164,4 @@ for i in range(20):
 
 ## After this, try out [Challenge 4](./challenges/4.md)
 
-{{#authors lmaxwell24, stao5}}
+{{#authors lmaxwell24,stao5}}
