@@ -73,4 +73,4 @@ More to come!
 | [NEFRC Discord](https://discord.com/invite/rPHMh4G)     | New England specific FRC server, has good content and coordination between other teams |
 
 
-{{#authors lmaxwell24}}
+{{#authors lmaxwell24,JulianRobotics}}
