@@ -1,6 +1,6 @@
 # Variables
 
-We have already seen in the previous section that we can print out *values* and *expressions*. However, it is often necceasry to remember a given value beyond the scope of a singular print statement or line of code. This is what motivates the need for a __variable__, which stores elements in computer memory.
+We have already seen in the previous sections that we can print out *values* and *expressions* of values that are evaluated by Python. However, it is often necceasry to remember a given value beyond the scope of a singular print statement or line of code. This is what motivates the need for a __variable__, which stores elements in computer memory.
 
 You can think of a variable as a "storage box" that has some kind of "datatype" assigned to them. Each of these boxes has a value associated with it. 
 
