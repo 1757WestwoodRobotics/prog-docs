@@ -58,13 +58,13 @@ Methods of strings
 We can call a couple functions on things of `string` type
 
 ```py
-# str.index(n) returns the index of the first found element in a string,
+# str.index(n) returns the index of the first found substring `n` in a string,
 # raises a ValueError if index does not exist. (We will talk more exceptions in a later section).
 str = 'robor'
-print(str.index(r)) # => 0
+print(str.index('ro')) # => 0
 print(str[0])       # => r
 
-print(str.index[b]) # => 2
+print(str.index('bor')) # => 2
 print(str[2])       # => b
 ```
 
@@ -88,9 +88,17 @@ print(str1) # => 'ww1757'
 # note the original string is unaffected as str.upper() returns a copy!
 ```
 
+```py
+# str.lower() returns returns a copy of the string with all the cased characters converted to lowercase.
+str1 = 'WestWood1757'
+print(str1.lower())) # => 'westwood1757'
+print(str1) # => 'WestWood1757'
+# note the original string is unaffected as str.lower() returns a copy!
+```
+
 Python has powerful string manipulation methods already built into the language. You should take advantadge of these where possible. For an exhaustive list, check out the [official Python docs](https://docs.python.org/3/library/stdtypes.html#string-methods).
 
 
 After this, try out [Challenge 1!](../challenges/1.md)
 
-{{#authors lmaxwell24}}
+{{#authors lmaxwell24, stao5}}
