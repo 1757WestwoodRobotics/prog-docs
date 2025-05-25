@@ -1,6 +1,6 @@
 # Classes
 
-Classes are higher order data structures in which we can define our own `method`s and `variable`s on
+Classes are higher order data structures in which we can define our own `method`s and `variable`s on. Think about this as creating your own datatypes that do not come with base Python.
 
 Lets look at a basic class example:
 
@@ -44,6 +44,6 @@ bob.sing()         # these are called instance methods, since they run on
                    # the instance of the class
 ```
 
-In the next couple of sub lessons we will look at each of these parts in more depth
+In the next couple of sub lessons we will look at each of these parts in more depth. 
 
-{{#authors lmaxwell24}}
+{{#authors lmaxwell24,stao5}}

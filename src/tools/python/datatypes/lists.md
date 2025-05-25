@@ -1,6 +1,6 @@
 # Lists
 
-Lists are just collections of other datatypes. They most literally list things out
+Lists are just collections of other datatypes. They most literally list things out. 
 
 ```py
 a = [1,2,3,4]  # creating a list of 4 elements
@@ -37,7 +37,7 @@ this may seem confusing at first, but has some neat properties that make our liv
 slices
 --- 
 
-We can also take `slices` of lists, or sublists within the same list
+We can also take `slices` of lists, or sublists within the same list. Taking a slice creates a new list.
 
 The syntax for taking a slice is `list[first:last]` where it takes inclusively the `first` index, but up to the `last` index. 
 
@@ -58,7 +58,10 @@ print(a[1:]) # [2,3,4,5,6,7,8,9,10]
 print(a[:7]) # [1,2,3,4,5,6]
 
 print(a[:])  # [1,2,3,4,5,6,7,8,9,10] 
-#this is valid! Its actually the fastest way to copy the elemetns
+#this is valid! Its actually the fastest way to copy the elements
+
+print(a[10:]) # []
+#calling out of bound indices will return an empty list!
 ```
 
 by using a negative index, we can actually take the last elements from lists
@@ -69,7 +72,7 @@ print(a[-1]) # => 5
 print(a[0:-1]) # => [1,2,3,4]
 # using negative, we can take some fun parts of lists
 print(a[-2:2]) # [] there are no elements between 4 and 2, in that order
-```
+```  
 
 strings as lists
 ---
@@ -138,14 +141,14 @@ li.remove(2)
 print(li)      # => [1,3]
 ```
 
-we can add lists onto other lists
+We can add lists onto other lists.
 ```py
 li      = [1,2,3]
 otherLi = [4,5,6]
 print(li)           # => [1,2,3]
 print(otherLi)      # => [4,5,6]
 print(li + otherLi) # => [1,2,3,4,5,6]
-# note that it doesn't modify either of the lists
+# note that it doesn't modify either of the lists (because a new list is created!)
 print(li)           # => [1,2,3] 
 print(otherLi)      # => [4,5,6]
 ```
@@ -168,6 +171,8 @@ a = ["tomato", "potato", "o"]
 print(len(a)) # => 3
 ```
 
+Python has powerful list manipulation methods that are built into the language. To find an exhaustive list of python `list` methods, check out the [official Python Docs](https://docs.python.org/3/tutorial/datastructures.html).
+
 Element checking
 ---
 We can use the `in` keyword to figure out if a given element is `in` a list
@@ -179,6 +184,45 @@ print(5 in a) # => False
 print(0 in a) # => False
 ```
 
+List `=`
+---
+
+So far we've seen that the assignment statement `=` copies the contents of one variable into the other. This is true for ints, strings, bools, and floats.
+
+However, variables for lists store an address of where we can find the actual list in computer memory. We say the variable "points" to the list as opposed to "storing" the list. The `=` statement copies the address as opposed to copying the list's contents. See the following diagram:
+
+![list-diagram](list-diagram.jpg)
+
+The following example illustrates the consequences of this, being that modifying a variable that points to a list means we see the modification from any variable that points to it.
+
+```py
+a = [1,2,3,4] # a POINTS to this list, which is stored in memory
+b = [5,6,7,8] # b POINTS to this list, which is stored in memory
+print(a) # => [1,2,3,4]
+print(b) # => [5,6,7,8]
+
+a = b # a now POINTS to what b POINTS to
+
+print(a) # => [5,6,7,8]
+print(b) # => [5,6,7,8]
+
+b.append(9) # modifying b 
+
+print(a) # => [5,6,7,8,9]
+print(b) # => [5,6,7,8,9]
+
+b.append(10) # modifying a again 
+
+print(a) # => [5,6,7,8,9,10]
+print(b) # => [5,6,7,8,9,10]
+
+# As both variables point to the same list in memory, 
+# modifying one modifies both
+```
+
+If we wanted to copy values, but maintain the independance of the lists so that modifying one does not modify the other, we would need to manually iterate through each list. This can be done cleanly with loops, which we will discuss in the loops section. Note that `==` checks if two lists have the same values and length, whereas a new keyword `is` checks if two variables point to the same list. This is dicsussed more in conditionals below.
+
+
 ### At this point, try out [challenge 2](../challenges/2.md)!
 
-{{#authors lmaxwell24}}
+{{#authors lmaxwell24,stao5}}
