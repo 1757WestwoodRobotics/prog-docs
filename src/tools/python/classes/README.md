@@ -46,4 +46,4 @@ bob.sing()         # these are called instance methods, since they run on
 
 In the next couple of sub lessons we will look at each of these parts in more depth. 
 
-{{#authors lmaxwell24}}
+{{#authors lmaxwell24, stao5}}
