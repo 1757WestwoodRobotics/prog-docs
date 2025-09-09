@@ -70,6 +70,7 @@
 	- [Controllers](tools/robotpy/controller/README.md)
 		- [PID control](tools/robotpy/controller/pid.md)
 			- [PIDF](tools/robotpy/controller/pidf.md)
+			- [Profiled PID](tools/robotpy/controller/profiled.md)
 		- [Bang-Bang](tools/robotpy/controller/bang.md)
 		- [Ramsette](tools/robotpy/controller/ramsette.md)
 		- [Higher order controllers](tools/robotpy/controller/high.md)
