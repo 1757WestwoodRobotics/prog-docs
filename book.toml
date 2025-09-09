@@ -6,7 +6,7 @@ title = "1757 Programming Documentation"
 
 [output.html]
 git-repository-url = "https://github.com/1757WestwoodRobotics/prog-docs"
-additional-js = ["coi.js"]
+additional-js = ["coi.js", "mermaid.min.js", "mermaid-init.js"]
 
 
 [preprocessor.repl]
@@ -16,7 +16,12 @@ src = "https://whsrobotics.org/mdbook-repl/embed/"
 
 # python is disabled by default and loading is lazy
 python.enable = true
+
+# python is disabled by default and loading is lazy
 python.loading = "lazy"
 
 
 [preprocessor.github-authors]
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
