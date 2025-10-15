@@ -67,6 +67,7 @@
 	- [Kalman filter](tools/robotpy/kalman.md)
 	- [PathPlanner](tools/robotpy/pp.md)
 	- [Geometry](tools/robotpy/geo.md)
+	- [Vision Integration](tools/robotpy/vision.md)
 	- [Controllers](tools/robotpy/controller/README.md)
 		- [PID control](tools/robotpy/controller/pid.md)
 			- [PIDF](tools/robotpy/controller/pidf.md)
